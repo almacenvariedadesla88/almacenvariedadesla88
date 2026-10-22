@@ -39,6 +39,7 @@ y códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | `index (5).html`, `index_jugueteria.html` | **Legado de la clonación de IKI**: copia de referencia de la tienda original y de su catálogo de juguetería. No se sirven ni se mantienen; quedan intactos como respaldo (estrategia: un catálogo por repositorio) |
 | `qa_admin_e2e.js`, `qa_aterrizaje_precios.js` | Suites E2E locales (ajustar rutas al checkout local antes de correr) |
+| `qa_smoke_produccion.js` + `.github/workflows/qa-smoke.yml` | Smoke L4 diario (12:00 UTC) contra la tienda publicada: abre/cierra issue automático |
 
 ---
 
@@ -200,10 +201,16 @@ menú móvil, carruseles, héroe, favoritos, buscador, upsells y footer.
 
 ## 8. Pruebas
 
-Suites E2E locales (jsdom/Playwright, ajustar rutas del checkout local
-antes de correr): `qa_admin_e2e.js` (panel) y
-`qa_aterrizaje_precios.js` (aterrizajes, precios exactos, carrito y
-mensaje de WhatsApp).
+Plan completo en `PLAN_AUDITORIA_E2E_QA.md` (niveles L0–L5, severidades
+S1–S4 y calendario). Suites:
+
+- **Locales** (jsdom/Playwright, ajustar rutas del checkout local antes
+  de correr): `qa_admin_e2e.js` (panel) y `qa_aterrizaje_precios.js`
+  (aterrizajes, precios exactos, carrito y mensaje de WhatsApp).
+- **Producción (automática)**: `qa_smoke_produccion.js` corre diario a
+  las 12:00 UTC vía `qa-smoke.yml`: 23 checks de lectura (página,
+  catálogo, configuración, imágenes, activos de marca, deploy de Pages).
+  Falla → issue `qa-smoke` con el log; se recupera → se cierra solo.
 
 ---
 

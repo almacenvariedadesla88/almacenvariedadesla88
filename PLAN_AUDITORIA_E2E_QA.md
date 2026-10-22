@@ -161,8 +161,10 @@ Decisión:           PUBLICAR / NO PUBLICAR (motivo)
 
 ## 7. Backlog de automatización (orden sugerido)
 
-1. `qa_smoke_produccion.js` — L4 automático (fetch + parseo + sample de precios e imágenes).
+1. ✅ **Hecho:** `qa_smoke_produccion.js` — L4 automático (23 checks: página,
+   catálogo, configuración, imágenes, activos, deploy de Pages).
 2. Ampliar `qa_aterrizaje_precios.js` con el bloque de checkout por fases y móvil (L2 nuevos).
 3. Ampliar `qa_admin_e2e.js` con publicación a repositorio espejo (L3).
-4. Workflow `qa-smoke.yml` diario (cron 12:00 UTC) que corre L4 y abre issue si falla.
+4. ✅ **Hecho:** workflow `qa-smoke.yml` diario (12:00 UTC) que corre L4 y
+   abre/cierra issue automático con etiqueta `qa-smoke`.
 5. Extracción del JS inline a `scripts/extraer_js.py` para `node --check` en L0.
