@@ -433,7 +433,7 @@ def escribir_excel(archivo, hojas):
     from openpyxl import Workbook
     from openpyxl.styles import Font, PatternFill, Border, Side
     from openpyxl.utils import get_column_letter
-    thin = Border(bottom=Side(style="thin", color="E6DFF3"))
+    thin = Border(bottom=Side(style="thin", color="E9D9C8"))
     for titulo, headers, filas, anchos, cols_cop, resumen in hojas:
         wb = Workbook()
         ws = wb.active
@@ -441,8 +441,8 @@ def escribir_excel(archivo, hojas):
         ws.append(headers)
         for c in range(1, len(headers) + 1):
             cell = ws.cell(row=1, column=c)
-            cell.font = Font(name="Nunito", bold=True, color="F7F4FC", size=11)
-            cell.fill = PatternFill("solid", fgColor="322D5B")
+            cell.font = Font(name="Montserrat", bold=True, color="FFF9F2", size=11)
+            cell.fill = PatternFill("solid", fgColor="4B4141")
             cell.border = thin
         for f in filas:
             ws.append(f)
@@ -461,13 +461,13 @@ def escribir_excel(archivo, hojas):
         if resumen:
             rs = wb.create_sheet("Resumen")
             rs.append(["Resumen — " + titulo])
-            rs["A1"].font = Font(name="Nunito", bold=True, size=13)
+            rs["A1"].font = Font(name="Montserrat", bold=True, size=13)
             for linea in resumen:
                 rs.append(linea)
             for c in range(1, 5):
                 cel = rs.cell(row=3, column=c)
-                cel.font = Font(bold=True, color="F7F4FC")
-                cel.fill = PatternFill("solid", fgColor="322D5B")
+                cel.font = Font(bold=True, color="FFF9F2")
+                cel.fill = PatternFill("solid", fgColor="4B4141")
             for r in range(4, rs.max_row + 1):
                 if "COP" in str(rs.cell(row=r, column=1).value or ""):
                     rs.cell(row=r, column=2).number_format = '"$"#,##0'

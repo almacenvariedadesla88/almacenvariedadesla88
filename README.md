@@ -1,4 +1,4 @@
-# LUNARIA — Noches suaves, sueños felices
+# LUNARIA — La comodidad comienza en casa
 
 Tienda online de **pijamas** de LUNARIA (Colombia): venta asistida por
 WhatsApp, publicada en **https://tiendalunaria.github.io/lunaria/** desde
@@ -10,9 +10,10 @@ por API.
 LUNARIA hereda el sistema completo de la tienda de IKI
 (github.com/ikib2c/iki) con la estrategia del grupo de **un catálogo por
 repositorio**: aquí vive solo la línea de pijamas (`l2`, proveedor
-Sublimados Majestic). Identidad propia: paleta azul noche / lavanda /
-crema lunar, tipografía Quicksand + Nunito, logo con luna creciente y
-códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
+Sublimados Majestic). Identidad propia: paleta marfil cremoso / beige
+avena / rosa empolvado / chocolate profundo, tipografía Cormorant
+Garamond + Montserrat, logo con luna creciente, nube y rama de hojas,
+y códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
 
 ---
 
@@ -32,7 +33,7 @@ códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
 | `LUNARIA_Brief_Branding.md` | Manual de marca y del sistema publicado |
 | `Sublimados_Majestic_Catalogo.xlsx` | Excel completo del proveedor, generado por el sync |
 | `logo_120.png` / `logo_512.png` / `*_light.png` | Logo LUNARIA transparente en tamaños web |
-| `favicon.ico`, `favicon-32/48.png`, `apple-touch-icon.png` | Símbolo luna + estrella |
+| `favicon.ico`, `favicon-32/48.png`, `apple-touch-icon.png` | Símbolo luna + nube + hojas |
 | `qr_lunaria.png` | QR hacia la tienda (tarjeta para compartir) |
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | `qa_admin_e2e.js`, `qa_aterrizaje_precios.js` | Suites E2E locales (ajustar rutas al checkout local antes de correr) |

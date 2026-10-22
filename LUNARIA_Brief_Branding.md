@@ -34,11 +34,11 @@ Halloween).
 
 ### Eslogan principal
 
-**Noches suaves, sueños felices.**
+**La comodidad comienza en casa.**
 
-### Concepto creativo de campaña
+### Frase de campaña (Navidad)
 
-**Pijamas que se vuelven abrazos.**
+**La magia de la Navidad también se vive en casa.**
 
 Puede utilizarse como concepto de campaña; no sustituye al eslogan
 principal.
@@ -63,10 +63,9 @@ variedad seleccionada y confianza**.
 
 ### La luna como hilo narrativo
 
-El nombre LUNARIA evoca la noche, la luna y el ritual de descansar.
+El nombre LUNARIA evoca la luna: la noche, la calma y el descanso.
 Toda la identidad gira alrededor de ese momento cálido del día en el
-que la familia se pone cómoda: **noches suaves que despiertan sueños
-felices**.
+que la familia se pone cómoda: **la comodidad comienza en casa**.
 
 ### Valores de marca
 
@@ -97,7 +96,8 @@ vestir la noche con cariño.
 
 ### Promesa de marca
 
-**Vestir la noche puede ser tan bonito como soñar.**
+**Pijamas cómodas y con estilo para disfrutar de los pequeños momentos
+y hacer del hogar nuestro lugar favorito.**
 
 ---
 
@@ -105,11 +105,10 @@ vestir la noche con cariño.
 
 ### Mensajes secundarios sugeridos
 
-- Pijamas que se vuelven abrazos.
-- Dulces sueños para toda la familia.
-- La noche también se disfruta bonito.
-- Regala sueños, regala LUNARIA.
-- Suave por fuera, tierno por dentro.
+- Sueños cómodos, momentos inolvidables.
+- Tu descanso, tu momento feliz.
+- Noches suaves, sueños felices.
+- Dormir juntos, soñar en familia.
 
 ### Tono de voz
 
@@ -122,8 +121,8 @@ vestir la noche con cariño.
 
 - Escribir siempre **LUNARIA** en mayúsculas en el nombre
   institucional.
-- Mantener el eslogan con su puntuación exacta: "Noches suaves,
-  sueños felices."
+- Mantener el eslogan con su puntuación exacta: "La comodidad
+  comienza en casa."
 - Frases cortas en botones y llamadas a la acción.
 - No saturar con emojis ni signos de exclamación.
 - Precios, envíos y disponibilidad siempre sin ambigüedad.
@@ -134,20 +133,26 @@ vestir la noche con cariño.
 
 ### Concepto
 
-- Wordmark **LUNARIA** en letras redondeadas, suaves y compactas, de
-  color **azul noche**.
-- **Luna creciente** en **lavanda** como acento principal, acompañada
-  de una **estrellita dorada**.
-- Composición horizontal compacta, legible desde 44 px de alto.
+- Logotipo tipográfico **LUNARIA** en mayúsculas, con **serifa
+  elegante** (Cormorant Garamond) y espaciado amplio, de color
+  **chocolate profundo** sobre marfil.
+- **Isotipo: luna creciente** abrazada por una **nube**, con una rama
+  de **hojas** que simboliza bienestar y naturaleza; acompañan
+  pequeñas estrellas doradas.
+- Eslogan debajo del nombre, en mayúsculas, separado por una **línea
+  fina con un corazón central**.
+- Composición legible desde 44 px de alto.
 
-La luna representa el descanso; la estrella, el brillo tierno de los
-buenos sueños. Las curvas del wordmark evocan la suavidad de la tela.
+La luna representa el descanso; la nube y las hojas, el hogar y el
+bienestar. En piezas de campaña el acabado es **metálico rosa dorado
+/ cobre suave**, con brillos delicados.
 
 ### Entregables de logo
 
-1. Logo principal horizontal a color (azul noche + lavanda + oro).
-2. Versión clara (blanca) para fondos oscuros y fotografía.
-3. Símbolo reducido (luna + estrella) para favicon y avatar.
+1. Logo principal horizontal a color (chocolate + rosa empolvado +
+   dorado).
+2. Versión clara (blanca/marfil) para fondos oscuros y fotografía.
+3. Símbolo reducido (luna + nube + hojas) para favicon y avatar.
 4. Versión a una tinta y versión negativa.
 5. Archivos vectoriales editables (SVG) como origen de producción.
 6. PNG transparente en varios tamaños (`logo_120.png`, `logo_512.png`,
@@ -172,59 +177,65 @@ buenos sueños. Las curvas del wordmark evocan la suavidad de la tela.
 
 | Nombre | HEX | RGB | Uso |
 |---|---|---|---|
-| Azul noche | `#322D5B` | 50, 45, 91 | Textos, titulares, botones oscuros, header del carrito, footer |
-| Lavanda | `#B9A5F5` | 185, 165, 245 | Acciones, botones principales, barra de pago, acentos, badges |
-| Crema lunar | `#F7F4FC` | 247, 244, 252 | Fondo general, empaques, áreas de descanso visual |
+| Marfil cremoso | `#FFF9F2` | 255, 249, 242 | Fondo general, luminosidad, calma |
+| Beige avena | `#E9D9C8` | 233, 217, 200 | Calidez, superficies, tarjetas, divisores y bordes |
+| Rosa empolvado | `#C99BA6` | 201, 155, 166 | Acciones, botones principales, barra de pago, acentos, badges |
+| Verde salvia | `#A9B9A5` | 169, 185, 165 | Serenidad, colección infantil/familia |
+| Chocolate profundo | `#4B4141` | 75, 65, 65 | Textos, titulares, logotipo, botones oscuros, footer |
 
 ### Colores funcionales de interfaz
 
 | Función | Color |
 |---|---|
-| Divisores y bordes | `#E6DFF3` |
-| Texto secundario | `#6A6480` |
+| Texto secundario | `#756A6A` |
+| Texto sobre rosa empolvado | `#3E3434` |
 | Favoritos (corazón) | `#F36B76` |
 | Éxito | `#237A57` |
 | Error | `#B42318` |
 | Aviso | `#8A5700` |
-| Resaltados suaves del panel | `#EFE9FD` |
+| Resaltados suaves del panel | `#F7EDE7` |
 
 ### Colores secundarios (acentos de campaña)
 
-| Nombre | HEX | Uso |
-|---|---|---|
-| Oro lunar | `#F2C14E` | Estrellas, detalles cálidos, temporada navideña |
-| Azul nebulosa | `#8EA6E8` | Contenido fresco, novedades |
-| Rosa algodón | `#F4C2D7` | Colecciones tiernas y detalles |
+| Nombre | Uso |
+|---|---|
+| Rosa dorado / cobre metálico | Piezas de campaña, Navidad, regalos, acabado del logo decorativo |
+| Dorado suave | Estrellas, destellos y detalles cálidos de temporada |
+
+Los colores vivos de los estampados (por ejemplo, el verde de la
+colección navideña) viven en el **producto**; el diseño de la pieza se
+mantiene en la paleta de marca.
 
 ### Tonos suaves por categoría (burbujas, chips y etiquetas)
 
-Se conservan los tonos pastel del sistema, siempre con texto azul
-noche encima: conjuntos `#FBE3AE` · pijamas `#FAD0D4` · shorts
-`#C6EEE9` · niños `#BDE8C7` · pantalones `#E3DAFD` · enterizos
-`#D7E3FC` · interior `#F9D9E8` · Navidad y Halloween `#D6F5E3`.
+Se conservan los tonos pastel del sistema, siempre con texto chocolate
+encima: conjuntos `#FBE3AE` · pijamas `#FAD0D4` · shorts `#C6EEE9` ·
+niños `#BDE8C7` · pantalones `#E3DAFD` · enterizos `#D7E3FC` ·
+interior `#F9D9E8` · Navidad y Halloween `#D6F5E3`.
 
 Los **marcos de fotografía** usan **fondo blanco puro `#FFFFFF`** con
 `object-fit: contain`: el producto completo, sin recortes.
 
 ### Contrastes de referencia (fórmula WCAG)
 
-- Azul noche sobre crema lunar: **12,3 : 1** (texto principal).
-- Azul noche sobre lavanda: **6,2 : 1** (botones principales).
-- `#6A6480` sobre crema lunar: **5,2 : 1** (texto secundario).
-- Blanco sobre azul noche: **12,3 : 1** (bandas oscuras).
+- Chocolate sobre marfil: **9,4 : 1** (texto principal).
+- `#3E3434` sobre rosa empolvado: **5,0 : 1** (botones principales).
+- `#756A6A` sobre marfil: **5,0 : 1** (texto secundario).
+- Marfil sobre chocolate: **9,4 : 1** (bandas oscuras).
 
 ### Proporción de uso recomendada
 
-- 55–65 % crema lunar y blanco.
-- 20–25 % azul noche y neutros.
-- 10–15 % lavanda.
-- 5–10 % acentos secundarios (oro, nebulosa, rosa, pastel de
-  categoría).
+- 40 % marfil cremoso y blanco.
+- 25 % beige avena.
+- 15 % rosa empolvado.
+- 10 % verde salvia (colección infantil/familia).
+- 10 % chocolate profundo.
+- Acentos de rosa dorado/dorado solo en campañas y temporadas.
 
 ### Accesibilidad cromática
 
-- Texto siempre azul noche sobre crema lunar o blanco.
-- En botones lavanda, texto azul noche (contraste verificado).
+- Texto siempre chocolate sobre marfil o blanco.
+- En botones rosa empolvado, texto `#3E3434` (contraste verificado).
 - No comunicar estados solo con color: acompañarlos de texto o icono.
 - Verificar contrastes con WCAG antes de publicar piezas nuevas.
 
@@ -234,26 +245,31 @@ Los **marcos de fotografía** usan **fondo blanco puro `#FFFFFF`** con
 
 ### Sistema tipográfico
 
-**Quicksand + Nunito.** Dos familias redondeadas y amables que
-transmiten la suavidad de la marca; ambas están en Google Fonts.
+**Cormorant Garamond + Montserrat.** La serifa elegante pone la voz
+del descanso y de los momentos especiales; la sans limpia y moderna
+cuenta lo funcional. Ambas están en Google Fonts.
 
 | Familia | Función | Pesos aplicados en web |
 |---|---|---|
-| Quicksand | Titulares, navegación destacada, precios, nombre del logo | 500, 600 y 700 |
-| Nunito | Texto de interfaz, descripciones, botones, formularios y cuerpo | 400, 500, 600 y 700 |
+| Cormorant Garamond | Logotipo, titulares y frases emocionales | 500, 600 y 700 |
+| Montserrat | Textos, menús, botones, precios y descripciones | 400, 500, 600 y 700 |
+
+**Script decorativo:** SOLO piezas de campaña (títulos de colección
+tipo "Short Coqueta", frases emotivas). Nunca en la tienda para
+textos funcionales.
 
 ### Jerarquía sugerida para web
 
 | Estilo | Tamaño desktop | Peso | Uso |
 |---|---|---|---|
-| H1 | 40–48 px | Quicksand SemiBold 600 | Mensaje principal de página |
-| H2 | 30–36 px | Quicksand SemiBold 600 | Secciones principales |
-| H3 | 22–26 px | Quicksand SemiBold 600 | Títulos de módulos |
-| H4 | 18–20 px | Nunito SemiBold 600 | Tarjetas y subtítulos |
-| Cuerpo | 16 px | Nunito Regular 400 | Descripciones y texto general |
-| Texto pequeño | 14 px | Nunito Regular 400 | Información secundaria |
-| Etiquetas | 12–14 px | Nunito Medium 500 | Categorías y metadatos |
-| Botones | 14–16 px | Nunito SemiBold 600 | Acciones |
+| H1 | 32–55 px | Cormorant Garamond SemiBold 600 | Mensaje principal de página |
+| H2 | 28–34 px | Cormorant Garamond SemiBold 600 | Secciones principales |
+| H3 | 20–26 px | Cormorant Garamond SemiBold 600 | Títulos de módulos |
+| H4 | 15–18 px | Montserrat SemiBold 600 | Tarjetas y subtítulos |
+| Cuerpo | 15 px | Montserrat Regular 400 | Descripciones y texto general |
+| Texto pequeño | 13 px | Montserrat Regular 400 | Información secundaria |
+| Etiquetas | 12–14 px | Montserrat Medium 500 | Categorías y metadatos |
+| Botones | 14–15 px | Montserrat Medium 500–600 | Acciones |
 
 ### Reglas tipográficas
 
@@ -265,8 +281,9 @@ transmiten la suavidad de la marca; ambas están en Google Fonts.
 
 ### Nota sobre el wordmark
 
-El logo se trata como forma gráfica propia: Quicksand sirve de
-referencia estilística, pero el wordmark definitivo debe vectorizarse.
+El logo se trata como forma gráfica propia: Cormorant Garamond sirve
+de referencia estilística, pero el wordmark definitivo debe
+vectorizarse.
 
 ---
 
@@ -277,23 +294,24 @@ cualquier pieza nueva debe partir de ellos:
 
 ```css
 :root{
-  --y:#B9A5F5;   /* lavanda: acciones y acentos (antes amarillo IKI) */
-  --c:#322D5B;   /* azul noche: texto y superficies oscuras (antes carbón) */
-  --cr:#F7F4FC;  /* crema lunar: fondo general (antes crema cálida) */
-  --bd:#E6DFF3;  /* divisores y bordes */
-  --mu:#6A6480;  /* texto secundario */
+  --y:#C99BA6;   /* rosa empolvado: acciones y acentos (antes amarillo IKI) */
+  --c:#4B4141;   /* chocolate: texto y superficies oscuras (antes carbón) */
+  --cr:#FFF9F2;  /* marfil cremoso: fondo general (antes crema cálida) */
+  --bd:#E9D9C8;  /* beige avena: divisores y bordes */
+  --mu:#756A6A;  /* texto secundario */
+  --cy:#3E3434;  /* texto sobre rosa empolvado */
   --coral:#F36B76; /* favoritos */
   --ok:#237A57;  /* éxito */
   --err:#B42318; /* error */
-  --ff:"Quicksand",sans-serif; /* titulares */
-  --fb:"Nunito",sans-serif     /* cuerpo e interfaz */
+  --ff:"Cormorant Garamond",serif; /* titulares */
+  --fb:"Montserrat",sans-serif     /* cuerpo e interfaz */
 }
 ```
 
 Equivalencias con la hoja de estilos de GDI/excel del pipeline
-(`scripts/sync_catalogos.py`): cabecera de Excel en azul noche
-`#322D5B`, texto de cabecera en crema lunar `#F7F4FC`, bordes
-`#E6DFF3`.
+(`scripts/sync_catalogos.py`): cabecera de Excel en chocolate
+`#4B4141`, texto de cabecera en marfil `#FFF9F2`, bordes
+`#E9D9C8`.
 
 ---
 
@@ -371,10 +389,10 @@ por prenda y estampados como chips.
 
 ### Ecommerce
 
-- Header con logo y eslogan como tagline ("Noches suaves, sueños
-  felices").
+- Header con logo y eslogan como tagline ("La comodidad comienza en
+  casa").
 - Tarjetas de producto con marco blanco y favorito coral.
-- Barra de pago lavanda con texto azul noche.
+- Barra de pago rosa empolvado con texto chocolate.
 - Hoja de pedido PNG (logo, consecutivo, filas por producto).
 - Tarjeta para compartir 1080×1080 con QR hacia la tienda.
 
@@ -383,7 +401,8 @@ por prenda y estampados como chips.
 - Plantilla cuadrada (1080×1080) e historias (1080×1920).
 - Plantilla de lanzamiento, producto, promoción y fechas especiales
   (Navidad y Halloween).
-- Avatar: luna + estrella sobre lavanda.
+- Avatar: isotipo compacto (luna + nube + hojas) sobre marfil o rosa
+  empolvado.
 
 ### Empaque y materiales físicos
 
@@ -396,7 +415,7 @@ por prenda y estampados como chips.
 
 | Archivo / carpeta | Rol |
 |---|---|
-| `index.html` | Tienda completa (HTML + CSS + JS en un archivo). Tokens LUNARIA, tipografía Quicksand + Nunito |
+| `index.html` | Tienda completa (HTML + CSS + JS en un archivo). Tokens LUNARIA, tipografía Cormorant Garamond + Montserrat |
 | `catalogo.js` | Catálogo activo (99 productos de la línea de pijamas). Lo genera el cron: no se edita a mano |
 | `data/configuracion.js` | Configuración publicada desde el panel ("Publicar para TODOS"); la mantiene el panel vía API de GitHub |
 | `legal.html` | 8 políticas con anclas; absorbe la configuración publicada |
@@ -404,7 +423,7 @@ por prenda y estampados como chips.
 | `.github/workflows/sync-catalogos.yml` | Cron cada 6 horas (+ manual): sincroniza, commitea y publica |
 | `img/p/` | Fotos rehospedadas y optimizadas (webp, hash del URL) |
 | `logo_120.png`, `logo_512.png`, `*_light.png` | Logo LUNARIA transparente en tamaños web |
-| `favicon.ico`, `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` | Símbolo luna + estrella |
+| `favicon.ico`, `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` | Símbolo luna + nube + hojas |
 | `qr_lunaria.png` | QR hacia https://tiendalunaria.github.io/lunaria/ |
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | `Sublimados_Majestic_Catalogo.xlsx` | Excel completo del proveedor, generado por el sync |
@@ -439,18 +458,23 @@ por prenda y estampados como chips.
 ## 13. Resumen ejecutivo para el diseñador
 
 Desarrollar el sistema visual de **LUNARIA**, tienda colombiana de
-pijamas para toda la familia: identidad nocturna, cálida y serena.
-Paleta principal: azul noche `#322D5B`, lavanda `#B9A5F5` y crema lunar
-`#F7F4FC`, con oro lunar `#F2C14E` para estrellas y detalles.
-Tipografía: Quicksand para titulares y precios, Nunito para textos e
-interfaz. Logo: wordmark redondeado con luna creciente y estrellita.
+pijamas para toda la familia: identidad cálida, hogareña y delicada.
+Paleta principal: marfil cremoso `#FFF9F2`, beige avena `#E9D9C8`,
+rosa empolvado `#C99BA6` y chocolate profundo `#4B4141`, con verde
+salvia `#A9B9A5` para la colección infantil/familia y acentos de rosa
+dorado metálico para campañas.
+Tipografía: Cormorant Garamond para logotipo, titulares y frases
+emocionales; Montserrat para textos, menús, botones y precios. Logo:
+isotipo de luna creciente abrazada por una nube, con rama de hojas y
+estrellitas, y logotipo **LUNARIA** en serifa elegante con el eslogan
+bajo una línea fina con corazón.
 
-El eslogan es **"Noches suaves, sueños felices."** y el concepto de
-campaña, **"Pijamas que se vuelven abrazos."** La tienda ya está
-publicada y operativa; el diseño debe partir de los tokens de la
-sección 7 y conservar la suavidad, la legibilidad móvil y la
-accesibilidad del sistema heredado.
+El eslogan es **"La comodidad comienza en casa."** y la frase de
+campaña navideña, **"La magia de la Navidad también se vive en
+casa."** La tienda ya está publicada y operativa; el diseño debe
+partir de los tokens de la sección 7 y conservar la suavidad, la
+legibilidad móvil y la accesibilidad del sistema heredado.
 
-**Resultado esperado:** una identidad de noche amable, consistente y
-lista para crecer con las temporadas (Navidad, Halloween) y con
-nuevos catálogos por repositorio.
+**Resultado esperado:** una identidad cálida y hogareña, consistente
+y lista para crecer con las temporadas (Navidad, San Valentín, Día de
+la Madre) y con nuevos catálogos por repositorio.
