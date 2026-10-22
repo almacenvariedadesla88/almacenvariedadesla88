@@ -31,6 +31,7 @@ y códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
 | `generar_enlace_config.py` | **Local** (en `.gitignore`): arma el enlace de configuración de un solo toque (token) |
 | `GitHub.txt` | **Local** (en `.gitignore`): donde vive el token de GitHub |
 | `LUNARIA_Brief_Branding.md` | Manual de marca y del sistema publicado |
+| `PLAN_AUDITORIA_E2E_QA.md` | Plan de auditoría E2E/QA: niveles L0–L5, severidades, calendario |
 | `Sublimados_Majestic_Catalogo.xlsx` | Excel completo del proveedor, generado por el sync |
 | `logo_120.png` / `logo_512.png` / `*_light.png` | Logo LUNARIA transparente en tamaños web |
 | `favicon.ico`, `favicon-32/48.png`, `apple-touch-icon.png` | Símbolo luna + nube + hojas |
