@@ -39,6 +39,7 @@ y códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | ~~`index (5).html`, `index_jugueteria.html`~~ | Legado de la clonación de IKI: **eliminados el 22-oct-2026** — quedaban publicados como URLs vivas con la marca vieja (verificado: HTTP 200 en producción), confundiendo la marca y arriesgando indexación. Recuperables desde el historial (`git checkout a41f1f0 -- <archivo>`) |
 | `qa_admin_e2e.js`, `qa_aterrizaje_precios.js` | Suites E2E locales (ajustar rutas al checkout local antes de correr) |
+| `sitemap.xml`, `robots.txt` | SEO: envío a Google Search Console; canonical en index/legal. Al comprar el dominio oficial: actualizar URLs (GitHub Pages redirige 301 automático) |
 | `qa_smoke_produccion.js` + `.github/workflows/qa-smoke.yml` | Smoke L4 diario (12:00 UTC) contra la tienda publicada: abre/cierra issue automático |
 
 ---
