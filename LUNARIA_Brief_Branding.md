@@ -1,6 +1,6 @@
 # LUNARIA — Brief de identidad de marca y manual para diseño
 
-**Versión:** 1.0
+**Versión:** 1.1 (alineada al brief oficial de marca)
 **Fecha:** octubre de 2026
 **Mercado:** Colombia
 **Modelo de negocio:** comercio electrónico (venta asistida por WhatsApp)
@@ -209,9 +209,9 @@ mantiene en la paleta de marca.
 ### Tonos suaves por categoría (burbujas, chips y etiquetas)
 
 Se conservan los tonos pastel del sistema, siempre con texto chocolate
-encima: conjuntos `#FBE3AE` · pijamas `#FAD0D4` · shorts `#C6EEE9` ·
-niños `#BDE8C7` · pantalones `#E3DAFD` · enterizos `#D7E3FC` ·
-interior `#F9D9E8` · Navidad y Halloween `#D6F5E3`.
+encima: conjuntos `#F6EBDD` · pijamas `#F5E1E6` · shorts `#DFE9DA` ·
+niños `#DDE8D8` · pantalones `#EEE7DE` · enterizos `#E8E9EE` ·
+interior `#F7E5EC` · Navidad y Halloween `#E3EAD9`.
 
 Los **marcos de fotografía** usan **fondo blanco puro `#FFFFFF`** con
 `object-fit: contain`: el producto completo, sin recortes.
@@ -356,14 +356,14 @@ suave e icono en `CATS`):
 
 | Categoría | Tono | Productos (oct 2026) |
 |---|---|---|
-| Pijamas de pareja | `#FAD0D4` | 7 |
-| Conjuntos y blusas | `#FBE3AE` | 16 |
-| Pantalones y capris | `#E3DAFD` | 16 |
-| Shorts y bermudas | `#C6EEE9` | 15 |
-| Ropa interior y juanitas | `#F9D9E8` | 13 |
-| Enterizos y batolas | `#D7E3FC` | 7 |
-| Niños y niñas | `#BDE8C7` | 8 |
-| Navidad y Halloween | `#D6F5E3` | 17 |
+| Pijamas de pareja | `#F5E1E6` | 7 |
+| Conjuntos y blusas | `#F6EBDD` | 16 |
+| Pantalones y capris | `#EEE7DE` | 16 |
+| Shorts y bermudas | `#DFE9DA` | 15 |
+| Ropa interior y juanitas | `#F7E5EC` | 13 |
+| Enterizos y batolas | `#E8E9EE` | 7 |
+| Niños y niñas | `#DDE8D8` | 8 |
+| Navidad y Halloween | `#E3EAD9` | 17 |
 
 Las **pijamas de familia** se expanden por prenda (dama, dama plus,
 caballero, 2XL unisex y niño con tallas 2/4–14/16) con el precio real
@@ -427,6 +427,7 @@ por prenda y estampados como chips.
 | `qr_lunaria.png` | QR hacia https://tiendalunaria.github.io/lunaria/ |
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | `Sublimados_Majestic_Catalogo.xlsx` | Excel completo del proveedor, generado por el sync |
+| `index (5).html`, `index_jugueteria.html` | Legado de la clonación de IKI: copia de referencia de la tienda original y de su catálogo de juguetería. No se sirven ni se mantienen; quedan intactos como respaldo |
 | `LUNARIA_Brief_Branding.md` | Este manual |
 | `README.md` | Documento operativo del sistema |
 
