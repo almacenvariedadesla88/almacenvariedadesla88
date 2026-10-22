@@ -168,3 +168,12 @@ Decisión:           PUBLICAR / NO PUBLICAR (motivo)
 4. ✅ **Hecho:** workflow `qa-smoke.yml` diario (12:00 UTC) que corre L4 y
    abre/cierra issue automático con etiqueta `qa-smoke`.
 5. Extracción del JS inline a `scripts/extraer_js.py` para `node --check` en L0.
+
+---
+
+## 8. Registro de corridas
+
+| Fecha | Corrida | Resultado | Acción |
+|---|---|---|---|
+| 22-oct-2026 | **L4 smoke de producción** (`qa_smoke_produccion.js`, 23 checks) | **23/23 PASS** — producción sana | Automatizado con `qa-smoke.yml` (12:00 UTC) |
+| 22-oct-2026 | **Auditoría de secretos** (tree + historial completo de git) | **0 fugas.** Tokens/credenciales ausentes en repo e historial; config publicada sin `claveAdmin` ni token; `.gitignore` cubre archivos locales. 2 hallazgos evaluados como aceptados: clave `sb_publishable_` del proveedor (pública por diseño) y clave de fábrica del panel en HTML (por diseño; publicar exige token, nunca en código) | Ninguna obligatoria; rotación de clave de fábrica opcional |

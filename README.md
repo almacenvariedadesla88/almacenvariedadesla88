@@ -159,6 +159,20 @@ conveniencia, no seguridad; fábrica `LUNARIA123*`).
   **enlace de configuración** de un solo toque (`python
   generar_enlace_config.py`, local).
 
+### Seguridad (auditada el 22-oct-2026)
+
+- **Cero secretos en el repo y su historial completo**: ni tokens de
+  GitHub, ni credenciales de correo; `GitHub.txt` y afines viven solo en
+  `.gitignore` local. La clave de la API del proveedor es una
+  `sb_publishable_` (pública por diseño, igual a la que su propia web
+  sirve al navegador).
+- La clave de fábrica del panel (`LUNARIA123*`) viaja en el HTML a
+  propósito: es conveniencia, no seguridad — solo cambia el navegador
+  local. Publicar para todos exige el token fine-grained, que nunca
+  está en el código: lo escribe el admin en su navegador.
+- Verificación diaria automática: el smoke L4 (23 checks) revisa que la
+  configuración publicada no contenga `claveAdmin` ni `github_pat_`.
+
 ---
 
 ## 5. Visibilidad (una sola fuente de verdad)
