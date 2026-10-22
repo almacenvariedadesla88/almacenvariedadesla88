@@ -427,7 +427,7 @@ por prenda y estampados como chips.
 | `qr_lunaria.png` | QR hacia https://tiendalunaria.github.io/lunaria/ |
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | `Sublimados_Majestic_Catalogo.xlsx` | Excel completo del proveedor, generado por el sync |
-| `index (5).html`, `index_jugueteria.html` | Legado de la clonación de IKI: copia de referencia de la tienda original y de su catálogo de juguetería. No se sirven ni se mantienen; quedan intactos como respaldo |
+| ~~`index (5).html`, `index_jugueteria.html`~~ | Legado de la clonación de IKI, eliminado el 22-oct-2026: quedaban servidos como URLs públicas con la marca vieja. Recuperables desde el historial del repositorio |
 | `qa_admin_e2e.js`, `qa_aterrizaje_precios.js`, `qa_smoke_produccion.js` | Suites de QA: panel, aterrizajes/precios (locales) y smoke diario de producción (automático) |
 | `PLAN_AUDITORIA_E2E_QA.md` | Plan de auditoría E2E/QA (niveles L0–L5, severidades, registro de corridas) |
 | `LUNARIA_Brief_Branding.md` | Este manual |
