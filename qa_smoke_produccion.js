@@ -1,12 +1,12 @@
 /* ============================================================
-   QA SMOKE L4 — Producción (https://tiendalunaria.github.io/lunaria/)
+   QA SMOKE L4 — Producción (https://almacenvariedadesla88.github.io/almacenvariedadesla88/)
    Solo lectura, sin compras. Corre diario (workflow qa-smoke.yml) y a mano.
    Uso local:  node qa_smoke_produccion.js
    URL alterne:QA_TIENDA_URL=https://... node qa_smoke_produccion.js
    Escribe smoke_resultado.txt (lo consume el workflow al abrir issue).
    ============================================================ */
-const BASE = (process.env.QA_TIENDA_URL || "https://tiendalunaria.github.io/lunaria/").replace(/\/?$/, "/");
-const UA = { "User-Agent": "lunaria-qa-smoke" };
+const BASE = (process.env.QA_TIENDA_URL || "https://almacenvariedadesla88.github.io/almacenvariedadesla88/").replace(/\/?$/, "/");
+const UA = { "User-Agent": "mdpijamas-qa-smoke" };
 
 const res = [];
 const check = (ok, id, msg, extra) => {
@@ -27,11 +27,11 @@ const vivo = async (u) => { try { const r = await pedir(u, { method: "HEAD" }); 
   /* 1. Página principal */
   const home = await texto(BASE);
   check(home.st === 200, "1.1", "home HTTP 200", home.st);
-  check(/<title>LUNARIA — La comodidad comienza en casa<\/title>/i.test(home.t), "1.2", "title con eslogan oficial");
-  check(/og:title" content="LUNARIA — La comodidad comienza en casa"/i.test(home.t), "1.3", "og:title oficial");
+  check(/<title>MD Pijamas — Descansa con estilo<\/title>/i.test(home.t), "1.2", "title con eslogan oficial");
+  check(/og:title" content="MD Pijamas — Descansa con estilo"/i.test(home.t), "1.3", "og:title oficial");
   check(/rel="icon" href="favicon\.ico"/.test(home.t), "1.4", "favicon enlazado");
-  check(/fonts\.googleapis\.com[^"]*Cormorant\+Garamond/.test(home.t) && /fonts\.googleapis\.com[^"]*Montserrat/.test(home.t), "1.5", "tipografias oficiales cargadas");
-  check(/wa\.me\/573132434760|573132434760/.test(home.t), "1.6", "WhatsApp de pedidos presente");
+  check(/fonts\.googleapis\.com[^"]*Montserrat/.test(home.t) && !/Cormorant/.test(home.t), "1.5", "tipografias oficiales cargadas");
+  check(/wa\.me\/573054544222|573054544222/.test(home.t), "1.6", "WhatsApp de pedidos presente");
 
   /* 2. catalogo.js */
   const cat = await texto(BASE + "catalogo.js?t=" + Date.now());
@@ -44,7 +44,7 @@ const vivo = async (u) => { try { const r = await pedir(u, { method: "HEAD" }); 
   check(ps.every(x => /^LUN-\d{4}$/.test(x.cid)), "2.5", "todos con codigo LUN-XXXX");
   const conImg = ps.filter(x => x.img);
   check(conImg.length >= ps.length * 0.95, "2.6", ">=95% con imagen propia", conImg.length + "/" + ps.length);
-  check(!/https?:\/\/(?!tiendalunaria)/.test(cat.t.replace(/https?:\/\/tiendalunaria[^"']*/g, "")) || !/https?:\/\/(?!tiendalunaria\.github\.io)[^"']*\.(jpg|png|webp)/i.test(cat.t), "2.7", "sin imagenes de dominios ajenos");
+  check(!/https?:\/\/(?!almacenvariedadesla88)/.test(cat.t.replace(/https?:\/\/almacenvariedadesla88[^"']*/g, "")) || !/https?:\/\/(?!almacenvariedadesla88\.github\.io)[^"']*\.(jpg|png|webp)/i.test(cat.t), "2.7", "sin imagenes de dominios ajenos");
 
   /* 3. Muestra de imagenes (20 aleatorias) */
   const muestra = conImg.sort(() => Math.random() - 0.5).slice(0, 20);
@@ -62,21 +62,21 @@ const vivo = async (u) => { try { const r = await pedir(u, { method: "HEAD" }); 
     check(!/"claveAdmin"/.test(cfg.t), "4.3", "sin claveAdmin publicada");
     check(!/github_pat_/.test(cfg.t), "4.4", "sin token de GitHub publicado");
     check(typeof conf.version === "number", "4.5", "version numerica", conf.version);
-    check((conf.tienda || {}).whatsappPedidos === "573132434760", "4.6", "WhatsApp vigente en config publicada", (conf.tienda || {}).whatsappPedidos);
+    check((conf.tienda || {}).whatsappPedidos === "573054544222", "4.6", "WhatsApp vigente en config publicada", (conf.tienda || {}).whatsappPedidos);
   }
 
   /* 5. Legal y activos de marca */
   const legal = await texto(BASE + "legal.html");
   check(legal.st === 200, "5.1", "legal.html HTTP 200", legal.st);
   const activos = ["logo_120.png", "logo_120_light.png", "logo_512.png", "logo_512_light.png", "favicon.ico",
-    "favicon-32.png", "favicon-48.png", "apple-touch-icon.png", "banner_pijamas_1600x600.png", "qr_lunaria.png"];
+    "favicon-32.png", "favicon-48.png", "apple-touch-icon.png", "banner_pijamas_1600x600.png", "qr_mdpijamas.png"];
   const muertos = [];
   for (const a of activos) { const st = await vivo(BASE + a); if (st !== 200) muertos.push(a + ":" + st); }
   check(muertos.length === 0, "5.2", "10 activos de marca HTTP 200", muertos);
 
   /* 6. Deploy reciente de Pages (aviso, no bloquea si la API esta limitada) */
   try {
-    const r = await fetch("https://api.github.com/repos/tiendalunaria/lunaria/actions/runs?per_page=15", { headers: UA });
+    const r = await fetch("https://api.github.com/repos/almacenvariedadesla88/almacenvariedadesla88/actions/runs?per_page=15", { headers: UA });
     if (r.ok) {
       const runs = (await r.json()).workflow_runs || [];
       const last = runs.find(x => x.name === "pages build and deployment");

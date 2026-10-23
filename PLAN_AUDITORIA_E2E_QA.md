@@ -1,7 +1,7 @@
-# LUNARIA — Plan de Auditoría E2E y QA
+# MD Pijamas — Plan de Auditoría E2E y QA
 
 **Versión:** 1.0 · **Fecha:** octubre 2026 · **Alcance:** todo el sistema publicado
-(https://tiendalunaria.github.io/lunaria/) y su pipeline.
+(https://almacenvariedadesla88.github.io/almacenvariedadesla88/) y su pipeline.
 
 > Objetivo: garantizar que la tienda venda bien, cobre bien y no se caiga.
 > Prioridad de riesgos: (1) cobrar mal, (2) catálogo roto, (3) pedido no llega
@@ -47,7 +47,7 @@ Verificaciones:
 - [ ] Ningún número `LUN-` reutilizado: nuevos códigos no existen en el histórico del repo.
 - [ ] Precios: `venta == ceil(base×1.6 /1000)×1000` para los 99 (fuera de temporada).
 - [ ] Sin precios placeholder ($3) en el catálogo final; familias expandidas con precio real por prenda.
-- [ ] Excel regenerado: cabecera chocolate `#4B4141`, hojas "Catálogo" y "Resumen", fecha de extracción de hoy.
+- [ ] Excel regenerado: cabecera negra `#1F1F1F`, hojas "Catálogo" y "Resumen", fecha de extracción de hoy.
 - [ ] Imágenes: toda `img/p/*.webp` referenciada existe; 0 URLs externas en `catalogo.js`.
 - [ ] Prueba de fallo simulada: desconexión a mitad de descarga → el script debe abortar y conservar el catálogo vigente.
 
@@ -80,7 +80,7 @@ C0–C6, héroe/favoritos D0–D6…). Complementos NUEVOS:
   `pull --rebase` del workflow absorbe sin conflicto (simular con 2 commits).
 
 ### L4 — Producción (smoke después de cada deploy + 1 vez/día)
-Contra https://tiendalunaria.github.io/lunaria/ (solo lectura, sin comprar):
+Contra https://almacenvariedadesla88.github.io/almacenvariedadesla88/ (solo lectura, sin comprar):
 - [ ] HTTP 200 en `/`, `/catalogo.js`, `/data/configuracion.js`, `/legal.html` y los 7 activos de marca.
 - [ ] `catalogo.js` parsea y tiene ≥ 95 productos visibles; muestra de 10 precios correctos.
 - [ ] Título y meta `og:` con el eslogan oficial; favicon carga (marca nueva).
@@ -90,7 +90,7 @@ Contra https://tiendalunaria.github.io/lunaria/ (solo lectura, sin comprar):
 
 ### L5 — No funcionales (1 vez por mes y antes de cada temporada)
 - **Móvil real**: iPhone SE y Android gama media (Chrome): carrito, checkout, WhatsApp.
-- **Accesibilidad**: contraste AA en rosa empolvado (`#3E3434` sobre `#C99BA6` = 5,0:1 ✓),
+- **Accesibilidad**: contraste AA en amarillo (`#1F1F1F` sobre `#FFD200` ≈ 11:1 ✓),
   foco visible, navegación por teclado del checkout completo, `aria-label` en iconos.
 - **Performance Lighthouse (móvil)**: objetivo ≥ 85; imágenes webp ~46 KB ya optimizadas;
   fuentes con `display=swap`; héroe solo descarga en escritorio (lazy en móvil).
@@ -106,11 +106,11 @@ Contra https://tiendalunaria.github.io/lunaria/ (solo lectura, sin comprar):
 |---|---|---|
 | Local | `index.html` directo + `catalogo.js` vigente | L0–L3 |
 | Staging | rama `qa/` con Pages de repositorio espejo | L3 (publicación real sin riesgo) |
-| Producción | tiendalunaria.github.io/lunaria | L4 smoke (solo lectura) |
+| Producción | almacenvariedadesla88.github.io/almacenvariedadesla88 | L4 smoke (solo lectura) |
 | Datos | WhatsApp de prueba `573001112222` (patrón de la suite A/B); clon del catálogo recortado a 10 ítems para iterar rápido | suites |
 
 Reglas: nunca publicar a producción desde QA; nunca comprar real en pruebas;
-el WhatsApp de pedidos real (573132434760) solo se valida leyendo el enlace
+el WhatsApp de pedidos real (573054544222) solo se valida leyendo el enlace
 generado, no enviándolo.
 
 ---

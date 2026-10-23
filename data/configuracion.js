@@ -1,12 +1,12 @@
 // Configuración de la tienda publicada desde el panel de administración
 // (botón "Publicar para TODOS"). Se aplica a TODOS los visitantes de
-// https://tiendalunaria.github.io/lunaria/ — nadie necesita editar este archivo a mano.
+// https://almacenvariedadesla88.github.io/almacenvariedadesla88/ — nadie necesita editar este archivo a mano.
 window.CONFIG_PUBLICADA = {
   "version": 1792588720869,
   "tienda": {
-    "nombre": "LUNARIA",
+    "nombre": "MD Pijamas",
     "logo": "logo_120.png",
-    "whatsappPedidos": "573132434760",
+    "whatsappPedidos": "573054544222",
     "whatsappAtencion": "",
     "razonSocial": "",
     "nit": "",

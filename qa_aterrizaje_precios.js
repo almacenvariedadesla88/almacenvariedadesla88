@@ -15,7 +15,7 @@ const { chromium } = require("C:/Users/User/IKI/dropi-analytics/node_modules/pla
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
   await page.route("**/data/configuracion.js", r => { const u = new global.URL(r.request().url()); u.searchParams.set("cb", String(Date.now())); r.continue({ url: u.toString() }); });
-  await page.goto("https://tiendalunaria.github.io/lunaria/?cb=" + Date.now(), { waitUntil: "domcontentloaded", timeout: 90000 });
+  await page.goto("https://almacenvariedadesla88.github.io/almacenvariedadesla88/?cb=" + Date.now(), { waitUntil: "domcontentloaded", timeout: 90000 });
   await page.waitForFunction(() => (window.PRODUCTOS || []).length > 0, { timeout: 60000 });
   await page.waitForTimeout(1500);
 
@@ -95,7 +95,7 @@ const { chromium } = require("C:/Users/User/IKI/dropi-analytics/node_modules/pla
     const art = await page.evaluate(() => { const p = prod("m66"); return p ? p.cid : null; });
     const page2 = await browser.newPage({ viewport: { width: 1280, height: 900 } });
     await page2.route("**/data/configuracion.js", r => { const u = new global.URL(r.request().url()); u.searchParams.set("cb", String(Date.now())); r.continue({ url: u.toString() }); });
-    await page2.goto("https://tiendalunaria.github.io/lunaria/?cb=" + Date.now() + "&art=" + art, { waitUntil: "domcontentloaded", timeout: 90000 });
+    await page2.goto("https://almacenvariedadesla88.github.io/almacenvariedadesla88/?cb=" + Date.now() + "&art=" + art, { waitUntil: "domcontentloaded", timeout: 90000 });
     await page2.waitForFunction(() => (window.PRODUCTOS || []).length > 0, { timeout: 60000 });
     await page2.waitForTimeout(3500);
     const c = await page2.evaluate((id) => {

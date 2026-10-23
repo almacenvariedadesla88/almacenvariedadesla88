@@ -1,8 +1,8 @@
-# Sincronizacion automatica del catalogo de LUNARIA (pijamas):
+# Sincronizacion automatica del catalogo de MD Pijamas (pijamas):
 # descarga Sublimados Majestic, regenera catalogo.js (tienda) y el Excel
 # del proveedor; y publica los cambios.
 #
-# LUNARIA es un catalogo por repositorio: solo la linea de pijamas (l2).
+# MD Pijamas es un catalogo por repositorio: solo la linea de pijamas (l2).
 #
 # Requisito (una sola vez): Settings > Actions > General > Workflow permissions
 # debe estar en "Read and write permissions" para que el bot pueda hacer push.
@@ -37,8 +37,8 @@ jobs:
         run: python scripts/sync_catalogos.py
       - name: Publicar cambios (si los hay)
         run: |
-          git config user.name  "tiendalunaria-bot"
-          git config user.email "tiendalunaria@users.noreply.github.com"
+          git config user.name  "almacenvariedadesla88-bot"
+          git config user.email "almacenvariedadesla88@users.noreply.github.com"
           git add catalogo.js *.xlsx img
           if ! git diff --cached --quiet; then
             git commit -m "sync: actualiza catalogo de pijamas y Excel del proveedor [skip ci]"

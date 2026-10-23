@@ -15,8 +15,8 @@
 const { chromium } = require("C:/Users/User/IKI/dropi-analytics/node_modules/playwright");
 const fs = require("fs");
 
-const BASE = "file:///C:/Users/User/LUNARIA/lunaria/index.html";
-const CLAVE = "LUNARIA123*";
+const BASE = "file:///C:/Users/User/ALMACENVARIEDADESLA88/lunaria/index.html";
+const CLAVE = "MDPIJAMAS123*";
 const res = [];
 let grupo = "";
 const check = (n, c, e) => res.push(grupo + " | " + n + ": " + (c ? "PASS" : "FAIL" + (e !== undefined ? " -> " + JSON.stringify(e) : "")));
@@ -113,13 +113,13 @@ const toasts = async (page) => page.evaluate(() => window.__toasts || []);
     await page.fill("#adminRazon", "Prueba SAS");
     await page.fill("#adminNit", "NIT-900123");
     await page.fill("#adminDir", "Calle Falsa 123");
-    await page.fill("#adminEmail", "prueba@lunaria.co");
-    await page.fill("#adminIg", "@lunaria.prueba");
+    await page.fill("#adminEmail", "prueba@mdpijamas.co");
+    await page.fill("#adminIg", "@mdpijamas.prueba");
     await page.fill("#adminPixel", "1234567890");
     await page.evaluate(() => guardarPanelAdmin());
     const guardado = await page.evaluate(() => JSON.parse(localStorage.getItem("lunaria-tienda-v1")));
     check("B3 legales/redes/pixel persistidos en localStorage",
-      guardado.razonSocial === "Prueba SAS" && guardado.nit === "NIT-900123" && guardado.pixelMeta === "1234567890" && guardado.instagram === "lunaria.prueba", guardado);
+      guardado.razonSocial === "Prueba SAS" && guardado.nit === "NIT-900123" && guardado.pixelMeta === "1234567890" && guardado.instagram === "mdpijamas.prueba", guardado);
     // B4: copiar configuración (respaldo) al portapapeles
     await page.evaluate(() => { window.__cb = null; const o = navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText.bind(navigator.clipboard) : null; if (o) navigator.clipboard.writeText = t => { window.__cb = t; return o(t); }; });
     await page.evaluate(() => copiarConfigAdmin());
@@ -130,7 +130,7 @@ const toasts = async (page) => page.evaluate(() => window.__toasts || []);
     // B5: restaurar
     await page.evaluate(() => restaurarPanelAdmin());
     const despues = await page.evaluate(() => ({ ls: localStorage.getItem("lunaria-tienda-v1"), nombre: TIENDA.nombre, wa: TIENDA.whatsappPedidos }));
-    check("B5 restaurar: limpia localStorage y vuelve a lo publicado", despues.ls === null && despues.nombre === "LUNARIA" && despues.wa === "573132434760", despues);
+    check("B5 restaurar: limpia localStorage y vuelve a lo publicado", despues.ls === null && despues.nombre === "MD Pijamas" && despues.wa === "573054544222", despues);
     // B6: preview de ganancias
     const preview = await page.evaluate(() => { document.getElementById("adminMargen").value = "25"; document.getElementById("adminMultiplicador").value = "1"; document.getElementById("adminRedondeo").value = "100"; pintarPreviewAdmin(); return document.getElementById("adminPreview").textContent; });
     check("B6 preview: costo $10.000 con 25% -> $12.500", /\$12\.500/.test(preview), preview);
@@ -335,10 +335,10 @@ const toasts = async (page) => page.evaluate(() => window.__toasts || []);
   /* ============ G. PUBLICAR PARA TODOS (EN VIVO, token real) ============ */
   grupo = "G-Publicar(vivo)";
   {
-    const tok = ((fs.readFileSync("C:/Users/User/LUNARIA/GitHub.txt", "utf8").match(/github_pat_[A-Za-z0-9_]+/) || [])[0]) || "";
+    const tok = ((fs.readFileSync("C:/Users/User/ALMACENVARIEDADESLA88/GitHub.txt", "utf8").match(/github_pat_[A-Za-z0-9_]+/) || [])[0]) || "";
     /* La verdad inmediata está en la API de GitHub (sin caché de Pages) */
     const apiConfig = async () => {
-      const r = await fetch("https://api.github.com/repos/tiendalunaria/lunaria/contents/data/configuracion.js", { headers: { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json" }, cache: "no-store" });
+      const r = await fetch("https://api.github.com/repos/almacenvariedadesla88/almacenvariedadesla88/contents/data/configuracion.js", { headers: { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json" }, cache: "no-store" });
       const j = await r.json();
       const txt = Buffer.from(j.content, "base64").toString("utf8");
       return { version: Number((/"version":\s*(\d+)/.exec(txt) || [0, 0])[1]), sinClave: !/"claveAdmin"/.test(txt), hero: /"heroIds":\s*"([^"]*)"/.exec(txt)[1] };
@@ -347,7 +347,7 @@ const toasts = async (page) => page.evaluate(() => window.__toasts || []);
     const ctx = await browser.newContext({ viewport: { width: 1400, height: 950 } });
     const page = await ctx.newPage();
     await page.route("**/data/configuracion.js", r => { const u = new global.URL(r.request().url()); u.searchParams.set("cb", String(Date.now())); r.continue({ url: u.toString() }); });
-    await page.goto("https://tiendalunaria.github.io/lunaria/?cb=" + Date.now(), { waitUntil: "domcontentloaded", timeout: 90000 });
+    await page.goto("https://almacenvariedadesla88.github.io/almacenvariedadesla88/?cb=" + Date.now(), { waitUntil: "domcontentloaded", timeout: 90000 });
     await page.waitForFunction(() => (window.PRODUCTOS || []).length > 0, { timeout: 60000 });
     await page.waitForTimeout(1000);
     await page.evaluate((t) => { localStorage.setItem("lunaria-github-token", t); }, tok);

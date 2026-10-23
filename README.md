@@ -1,19 +1,19 @@
-# LUNARIA — La comodidad comienza en casa
+# MD Pijamas — Descansa con estilo
 
-Tienda online de **pijamas** de LUNARIA (Colombia): venta asistida por
-WhatsApp, publicada en **https://tiendalunaria.github.io/lunaria/** desde
-el repositorio `github.com/tiendalunaria/lunaria`. Sin frameworks, sin
+Tienda online de **pijamas** de MD Pijamas (Colombia): venta asistida por
+WhatsApp, publicada en **https://almacenvariedadesla88.github.io/almacenvariedadesla88/** desde
+el repositorio `github.com/almacenvariedadesla88/almacenvariedadesla88`. Sin frameworks, sin
 build, sin backend: HTML + CSS + JS en un archivo, catálogo generado
 automáticamente y panel de administración que publica la configuración
 por API.
 
-LUNARIA hereda el sistema completo de la tienda de IKI
-(github.com/ikib2c/iki) con la estrategia del grupo de **un catálogo por
+MD Pijamas hereda el sistema completo de la tienda de LUNARIA
+(github.com/almacenvariedadesla88/almacenvariedadesla88) con la estrategia del grupo de **un catálogo por
 repositorio**: aquí vive solo la línea de pijamas (`l2`, proveedor
-Sublimados Majestic). Identidad propia: paleta marfil cremoso / beige
-avena / rosa empolvado / chocolate profundo, tipografía Cormorant
-Garamond + Montserrat, logo con luna creciente, nube y rama de hojas,
-y códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
+Sublimados Majestic). Identidad propia: eslogan *Descansa con estilo*,
+paleta azul `#0066CC` / amarillo `#FFD200` / rojo `#E31E24` / negro
+`#1F1F1F` / blanco, tipografía Montserrat ExtraBold, logo circular con
+luna y estrellas, respaldo de Almacén y Variedades La 88. Los códigos `LUN-XXXX` se conservan (ver `MD_PIJAMAS_Brief_Branding.md`).
 
 ---
 
@@ -30,12 +30,12 @@ y códigos de producto `LUN-XXXX` (ver `LUNARIA_Brief_Branding.md`).
 | `img/p/` | Imágenes rehospedadas de la tienda (miniaturas webp, hash del URL) |
 | `generar_enlace_config.py` | **Local** (en `.gitignore`): arma el enlace de configuración de un solo toque (token) |
 | `GitHub.txt` | **Local** (en `.gitignore`): donde vive el token de GitHub |
-| `LUNARIA_Brief_Branding.md` | Manual de marca y del sistema publicado |
+| `MD_PIJAMAS_Brief_Branding.md` | Manual de marca MD Pijamas y del sistema publicado |
 | `PLAN_AUDITORIA_E2E_QA.md` | Plan de auditoría E2E/QA: niveles L0–L5, severidades, calendario |
 | `Sublimados_Majestic_Catalogo.xlsx` | Excel completo del proveedor, generado por el sync |
-| `logo_120.png` / `logo_512.png` / `*_light.png` | Logo LUNARIA transparente en tamaños web |
-| `favicon.ico`, `favicon-32/48.png`, `apple-touch-icon.png` | Símbolo luna + nube + hojas |
-| `qr_lunaria.png` | QR hacia la tienda (tarjeta para compartir) |
+| `logo_120.png` / `logo_512.png` / `*_light.png` | Logo circular MD Pijamas en tamaños web |
+| `favicon.ico`, `favicon-32/48.png`, `apple-touch-icon.png` | Símbolo MD Pijamas (luna y estrellas) |
+| `qr_mdpijamas.png` | QR hacia la tienda (tarjeta para compartir) |
 | `banner_pijamas_1600x600.png` | Banner de categoría (fallback de burbujas) |
 | ~~`index (5).html`, `index_jugueteria.html`~~ | Legado de la clonación de IKI: **eliminados el 22-oct-2026** — quedaban publicados como URLs vivas con la marca vieja (verificado: HTTP 200 en producción), confundiendo la marca y arriesgando indexación. Recuperables desde el historial (`git checkout a41f1f0 -- <archivo>`) |
 | `qa_admin_e2e.js`, `qa_aterrizaje_precios.js` | Suites E2E locales (ajustar rutas al checkout local antes de correr) |
@@ -55,7 +55,7 @@ El cron corre `scripts/sync_catalogos.py` cada 6 horas. El pipeline:
 | `l2` | Sublimados Majestic | Supabase REST (pijamasalmayor.com) | pijamas, conjuntos, pantalones, shorts, interior, enterizos, ninos, navidad |
 
 Ante el cliente nunca aparece el nombre del proveedor: una sola marca
-(LUNARIA). Las demás líneas del grupo (joyas, juguetes, bebé, urbana)
+(MD Pijamas). Las demás líneas del grupo (joyas, juguetes, bebé, urbana)
 viven en sus propios repositorios.
 
 ### 2.2 Curación
@@ -113,7 +113,7 @@ aborta y se conserva el vigente).
 Las fotos de Majestic (Supabase) se **rehospedan y redimensionan** a
 webp 640 px, ~46 KB promedio, en `img/p/` (rehost incremental por hash
 del URL). Cero dominios ajenos en las fotos. Cadena de respaldo en la
-tienda: foto fallida → siguiente de la galería → placeholder "LUNARIA"
+tienda: foto fallida → siguiente de la galería → placeholder "MD Pijamas"
 de la categoría.
 
 ### 2.6 Cron de GitHub Actions
@@ -144,10 +144,10 @@ temporada → **3)** margen de categoría → **4)** margen global.
 ## 4. Panel de administración
 
 Acceso: footer "Administración", `?admin` o Ctrl+Shift+A (clave de
-conveniencia, no seguridad; fábrica `LUNARIA123*`).
+conveniencia, no seguridad; fábrica `MDPIJAMAS123*`).
 
 - **Publicar para TODOS**: sube la configuración vigente a
-  `data/configuracion.js` vía API de GitHub (`tiendalunaria/lunaria`),
+  `data/configuracion.js` vía API de GitHub (`almacenvariedadesla88/almacenvariedadesla88`),
   con **versión siempre creciente** y **sin la clave del panel**; todos
   los visitantes la ven en ~1 minuto.
 - Editable sin tocar código: nombre, logo, WhatsApp, email, redes,
@@ -167,7 +167,7 @@ conveniencia, no seguridad; fábrica `LUNARIA123*`).
   `.gitignore` local. La clave de la API del proveedor es una
   `sb_publishable_` (pública por diseño, igual a la que su propia web
   sirve al navegador).
-- La clave de fábrica del panel (`LUNARIA123*`) viaja en el HTML a
+- La clave de fábrica del panel (`MDPIJAMAS123*`) viaja en el HTML a
   propósito: es conveniencia, no seguridad — solo cambia el navegador
   local. Publicar para todos exige el token fine-grained, que nunca
   está en el código: lo escribe el admin en su navegador.
@@ -202,10 +202,10 @@ menú móvil, carruseles, héroe, favoritos, buscador, upsells y footer.
   validación en vivo y consecutivo `PED-YYYYMMDD-NNN`.
 - **Vuelo al carrito** (WAAPI, respeta `prefers-reduced-motion`), badge
   con rebote y vibración en celulares.
-- **Pedido SIEMPRE directo por wa.me** al **+57 313 243 4760**: WhatsApp
+- **Pedido SIEMPRE directo por wa.me** al **+57 305 4544222**: WhatsApp
   abre con el chat listo; la hoja PNG del pedido se **descarga** para
-  adjuntarla en el mismo chat (logo LUNARIA, código `LUN-XXXX` por
-  artículo, Nequi 313 243 4760).
+  adjuntarla en el mismo chat (logo MD Pijamas, código `LUN-XXXX` por
+  artículo, Nequi 305 4544222).
 - **Buscador con cobertura total**: sin tildes/ñ, palabras sueltas en
   cualquier orden, código `LUN-XXXX` y SKU del proveedor.
 - Eventos para el Pixel de Meta: `PageView`, `ViewContent`,

@@ -1,7 +1,7 @@
-# LUNARIA — rastreo abierto para buscadores
+# MD Pijamas — rastreo abierto para buscadores
 # Al mover al dominio oficial: actualizar la linea Sitemap.
 
 User-agent: *
 Allow: /
 
-Sitemap: https://tiendalunaria.github.io/lunaria/sitemap.xml
+Sitemap: https://almacenvariedadesla88.github.io/almacenvariedadesla88/sitemap.xml

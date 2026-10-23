@@ -1,7 +1,7 @@
 // ======================================================================
-// catalogo.js de LUNARIA - generado automaticamente por scripts/sync_catalogos.py
+// catalogo.js de MD Pijamas - generado automaticamente por scripts/sync_catalogos.py
 // (2026-10-23 18:24). NO editar a mano: el cron de GitHub Actions lo regenera.
-// Fuentes: inventario propio de la marca (gestión interna de LUNARIA)
+// Fuentes: inventario propio de la marca (gestión interna de MD Pijamas)
 // ======================================================================
 const CATALOGO_LUNARIA=[
 /* moda: 99 productos */

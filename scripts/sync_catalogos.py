@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Sincroniza el catalogo de LUNARIA (pijamas) desde su proveedor y actualiza:
+"""Sincroniza el catalogo de MD Pijamas (pijamas) desde su proveedor y actualiza:
   - catalogo.js  : productos curados (con galerias y variantes) para la tienda
   - 1 Excel      : catalogo completo del proveedor (Sublimados Majestic)
 
 Fuente (publica):
   - Sublimados Majestic -> Supabase REST (publishable key del bundle publico)
 
-LUNARIA es la tienda de pijamas del grupo (linea interna `l2`): un catalogo
+MD Pijamas es la tienda de pijamas del grupo (linea interna `l2`): un catalogo
 por repositorio. Las demas lineas (joyas, juguetes, bebe, urbana) viven en
 sus propios repositorios y NO se sincronizan aqui.
 
@@ -373,9 +373,9 @@ def escribir_catalogo_js(secciones):
 
     lineas = []
     lineas.append("// ======================================================================")
-    lineas.append("// catalogo.js de LUNARIA - generado automaticamente por scripts/sync_catalogos.py")
+    lineas.append("// catalogo.js de MD Pijamas - generado automaticamente por scripts/sync_catalogos.py")
     lineas.append("// (%s). NO editar a mano: el cron de GitHub Actions lo regenera." % time.strftime("%Y-%m-%d %H:%M"))
-    lineas.append("// Fuentes: inventario propio de la marca (gestión interna de LUNARIA)")
+    lineas.append("// Fuentes: inventario propio de la marca (gestión interna de MD Pijamas)")
     lineas.append("// ======================================================================")
     lineas.append("const CATALOGO_LUNARIA=[")
     total = 0
@@ -433,7 +433,7 @@ def escribir_excel(archivo, hojas):
     from openpyxl import Workbook
     from openpyxl.styles import Font, PatternFill, Border, Side
     from openpyxl.utils import get_column_letter
-    thin = Border(bottom=Side(style="thin", color="E9D9C8"))
+    thin = Border(bottom=Side(style="thin", color="E6E8EB"))
     for titulo, headers, filas, anchos, cols_cop, resumen in hojas:
         wb = Workbook()
         ws = wb.active
@@ -441,8 +441,8 @@ def escribir_excel(archivo, hojas):
         ws.append(headers)
         for c in range(1, len(headers) + 1):
             cell = ws.cell(row=1, column=c)
-            cell.font = Font(name="Montserrat", bold=True, color="FFF9F2", size=11)
-            cell.fill = PatternFill("solid", fgColor="4B4141")
+            cell.font = Font(name="Montserrat", bold=True, color="FFFFFF", size=11)
+            cell.fill = PatternFill("solid", fgColor="1F1F1F")
             cell.border = thin
         for f in filas:
             ws.append(f)
@@ -466,8 +466,8 @@ def escribir_excel(archivo, hojas):
                 rs.append(linea)
             for c in range(1, 5):
                 cel = rs.cell(row=3, column=c)
-                cel.font = Font(bold=True, color="FFF9F2")
-                cel.fill = PatternFill("solid", fgColor="4B4141")
+                cel.font = Font(bold=True, color="FFFFFF")
+                cel.fill = PatternFill("solid", fgColor="1F1F1F")
             for r in range(4, rs.max_row + 1):
                 if "COP" in str(rs.cell(row=r, column=1).value or ""):
                     rs.cell(row=r, column=2).number_format = '"$"#,##0'
