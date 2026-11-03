@@ -1,6 +1,6 @@
 // ======================================================================
 // catalogo.js de MD Pijamas - generado automaticamente por scripts/sync_catalogos.py
-// (2026-11-03 12:55). NO editar a mano: el cron de GitHub Actions lo regenera.
+// (2026-11-03 18:46). NO editar a mano: el cron de GitHub Actions lo regenera.
 // Fuentes: inventario propio de la marca (gestión interna de MD Pijamas)
 // ======================================================================
 const CATALOGO_LUNARIA=[
@@ -48,7 +48,7 @@ const CATALOGO_LUNARIA=[
 {id:"m40",n:"Capri Tiras Plus",p:37000,cat:"pantalones",prov:"l2",cid:"LUN-0040",img:"img/p/66c9db44cdab0c7c.webp",imgs:["img/p/d912d9640cb9f19d.webp","img/p/267770f8dd7420c0.webp"],var:{"Estampado":["Oveja Nuve","Oso","Deisy"]},sku:"CTP"},
 {id:"m101",n:"Pijama Navidad Familiar",p:36000,cat:"navidad",prov:"l2",cid:"LUN-0080",img:"img/p/ca5335b432ef4b11.webp",imgs:["img/p/2c4a4011c9d6eb6f.webp","img/p/bb636d2210bc941d.webp"],var:{"Talla":["Única","Plus","S","M","L","2/4","6/8","10/12","14/16"],"Estampado":["Grinch Enojado","Grich Enojado","Santa Verde"]}},
 {id:"m102",n:"Pijamas Familiares",p:36000,cat:"pijamas",prov:"l2",cid:"LUN-0081",img:"img/p/0714c979ca03477c.webp",imgs:["img/p/8ab75090f459923d.webp","img/p/25635337ca761ed2.webp","img/p/86a615ced521b750.webp"],var:{"Estampado":["Familia Simpsons","Familia Stich","Familia Avengers","Familia Iroman","Familia Capitan America"]}},
-{id:"m103",n:"Pijama Familiar Navideñas",p:36000,cat:"navidad",prov:"l2",cid:"LUN-0082",img:"img/p/bd860c27ee281a2f.webp",imgs:["img/p/8e4e053f3e0f84ef.webp","img/p/988818b238a77607.webp","img/p/33b62243ad03ee79.webp"],var:{"Estampado":["Grinch Enojado","Reno Nuevo","Santa y Mickey","Papá Noel reno","Santa Nieve","Stich","Mickey","Stich Rojo"]}},
+{id:"m103",n:"Pijama Familiar Navideñas",p:36000,cat:"navidad",prov:"l2",cid:"LUN-0082",img:"img/p/bd860c27ee281a2f.webp",imgs:["img/p/8e4e053f3e0f84ef.webp","img/p/988818b238a77607.webp","img/p/33b62243ad03ee79.webp"],var:{"Estampado":["Reno Gorro","Grinch Asomado","Reno Chrismas","Mickey Santa Turqui","Santa Burrito","Santa Verde","Stich","Mickey"]}},
 {id:"m43",n:"Vestido Moschino",p:36000,cat:"conjuntos",prov:"l2",cid:"LUN-0043",img:"img/p/1bae28254d4bdc42.webp",imgs:["img/p/960646f8a06c2b4a.webp","img/p/069936c07fafc2ae.webp","img/p/de3d48adca2f9810.webp"],var:{"Estampado":["Galfier","Donald","Bob Esponja","Stich","Angelica","Hello Kitty"]},sku:"VES-001"},
 {id:"m42",n:"Bluson Bolsillo",p:36000,cat:"conjuntos",prov:"l2",cid:"LUN-0042",img:"img/p/6e84e9d7f625318f.webp",imgs:["img/p/2186b17d16d63ba2.webp","img/p/cfaaecc2eed6e081.webp"],var:{"Estampado":["Vellota","Bom Bom","Oso Cariñoso"]},sku:"BB-001"},
 {id:"m41",n:"Pantalon Camiseta",p:36000,cat:"pantalones",prov:"l2",cid:"LUN-0041",img:"img/p/2559efaf5f307f31.webp",imgs:["img/p/15f093204e4be36d.webp","img/p/517b995c465a6c5e.webp","img/p/68acefedeb795a3f.webp"],var:{"Estampado":["Carlitos","Cerdito","Chimuelo","Piolin","Vaquita","Koala","Pluto","Capibara Flor"]},sku:"PCD103"},
