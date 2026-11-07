@@ -1,6 +1,6 @@
 // ======================================================================
 // catalogo.js de MD Pijamas - generado automaticamente por scripts/sync_catalogos.py
-// (2026-11-07 00:53). NO editar a mano: el cron de GitHub Actions lo regenera.
+// (2026-11-07 06:52). NO editar a mano: el cron de GitHub Actions lo regenera.
 // Fuentes: inventario propio de la marca (gestión interna de MD Pijamas)
 // ======================================================================
 const CATALOGO_LUNARIA=[
