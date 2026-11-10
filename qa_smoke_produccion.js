@@ -38,7 +38,11 @@ const vivo = async (u) => { try { const r = await pedir(u, { method: "HEAD" }); 
   check(cat.st === 200, "2.1", "catalogo.js HTTP 200", cat.st);
   const ps = [...cat.t.matchAll(/\{id:"([a-z]+)(\d+)",n:"((?:[^"\\]|\\.)*)",p:(\d+),cat:"([\w-]+)".*?cid:"LUN-(\d+)"/g)]
     .map(m => ({ id: m[1] + m[2], n: m[3], p: +m[4], cat: m[5], cid: "LUN-" + m[6], img: (cat.t.slice(m.index, m.index + 600).match(/img:"([^"]+)"/) || [])[1] }));
-  check(ps.length >= 95, "2.2", "catalogo con >=95 productos visibles", ps.length);
+  /* El piso de inventario sigue al proveedor (Sublimados Majestic oculta
+     prendas y el sync las retira): 87 productos al 10-nov-2026, piso 70
+     con margen. El guarda-red del sync (<50% de los previos) cubre el caso
+     de una caida repentina; aqui solo se vigila el inventario minimo. */
+  check(ps.length >= 70, "2.2", "catalogo con >=70 productos visibles", ps.length);
   check(ps.every(x => x.p >= 10000), "2.3", "sin precios placeholder (<$10.000, familias sin expandir)", ps.filter(x => x.p < 10000).slice(0, 3).map(x => x.id + ":" + x.p));
   check(ps.every(x => x.p <= 200000), "2.4", "sin precios fuera de rango (> $200.000)", ps.filter(x => x.p > 200000).slice(0, 3).map(x => x.id + ":" + x.p));
   check(ps.every(x => /^LUN-\d{4}$/.test(x.cid)), "2.5", "todos con codigo LUN-XXXX");

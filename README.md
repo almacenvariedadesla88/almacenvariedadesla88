@@ -22,7 +22,7 @@ luna y estrellas, respaldo de Almacén y Variedades La 88. Los códigos `LUN-XXX
 | Archivo / carpeta | Rol |
 |---|---|
 | `index.html` | Tienda completa (HTML + CSS + JS en un archivo). Todo el comportamiento vive aquí |
-| `catalogo.js` | Catálogo activo (99 productos de pijamas). **Lo genera el cron**: no se edita a mano |
+| `catalogo.js` | Catálogo activo (87 productos de pijamas al 10-nov-2026; lo genera el cron: no se edita a mano) |
 | `data/configuracion.js` | Configuración publicada desde el panel ("Publicar para TODOS"). La mantiene el panel vía API de GitHub: nadie la edita a mano |
 | `legal.html` | 8 políticas con anclas; absorbe la configuración publicada (razón social, NIT, contacto) |
 | `scripts/sync_catalogos.py` | Descarga el proveedor de pijamas, normaliza, cura, clasifica, escribe `catalogo.js` y el Excel |
@@ -81,7 +81,10 @@ shorts/bermudas > juanitas
 | Niños y niñas | 8 |
 | Navidad y Halloween | 17 |
 
-**99 productos visibles.**
+El inventario cambia con el proveedor (Sublimados Majestic oculta prendas
+y el sync las retira): 99 productos al 23-oct-2026, 87 al 10-nov-2026. El
+smoke L4 vigila un piso de inventario (>=70) y el guarda-red del sync
+aborta ante cualquier caída repentina (<50% de los previos).
 
 ### 2.3 Pijamas de familia: precio real por prenda
 
